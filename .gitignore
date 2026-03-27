@@ -1,0 +1,4 @@
+.obsidian/
+*.tmp
+thumbs.db
+.DS_Store
