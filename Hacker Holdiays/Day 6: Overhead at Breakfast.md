@@ -5,7 +5,7 @@ The goal of this challenge is to identify a hidden online account based on clues
 
 ## 🛠️ Tools Used
 *   **Image Viewer**: For detailed inspection of the provided screenshot.
-*   **Gravatar Email Checker**: To verify account existence via email address (`en.gravatar.com/site/check/`).
+*   **Gravatar Email Checker**: To verify account existence via email address (`://gravatar.com`).
 *   **CyberChef**: A web-based tool for decoding data formats (specifically Base64).
 
 ---
@@ -20,7 +20,7 @@ The first step involves a thorough examination of the provided conversation scre
     *   **Email Address**: `lambobytelotushotel@gmail.com` (Derived from the visible text `lambobyte lotushotel@gmail.com`, removing the space to form a valid email structure).
     *   **Platform Hint**: "Started with a G" and "free tool that let me upload my profile."
 
-![[Screenshot 2026-08-01 220010.png]]
+![OSINT Clue Screenshot](Media/Screenshot%202026-08-01%20220010.png)   
 
 
 ### Phase 2: Hypothesis & Enumeration
@@ -29,11 +29,11 @@ Based on the extracted clues, we formulate a hypothesis to locate the target acc
 *   **Hypothesis**: The "G" platform is likely **GitHub** or **Gravatar**.
 *   **Action 1 (GitHub)**: A search for the username `lambobyte` on GitHub yields no relevant results matching the context.
 *   **Action 2 (Gravatar)**: Since Gravatar profiles are indexed by **email address** rather than just username, this is the primary vector.
-    *   Navigate to `https://en.gravatar.com/site/check/`.
+    *   Navigate to `https://://gravatar.com`.
     *   Input the extracted email: `lambobytelotushotel@gmail.com`.
     *   **Result**: A profile is successfully located.
 
-![[Screenshot 2026-08-01 220735.png]]
+![Gravatar Result](Media/Screenshot%202026-08-01%20220735.png)
 
 ### Phase 3: Data Retrieval
 Accessing the identified Gravatar profile reveals the critical payload.
@@ -42,7 +42,7 @@ Accessing the identified Gravatar profile reveals the critical payload.
     `VEhNe1MzY3JIVF9QcjBmaWwzX0g0c19iMzNuX0lkZW50MWZpM2R9`
 *   **Analysis**: The string structure (alphanumeric characters ending with `=`) is characteristic of **Base64 encoding**, a common method for obscuring flags in Capture The Flag (CTF) challenges.
 
-![[Screenshot 2026-08-01 220941.png]]
+![Base64 Hash](Media/Screenshot%202026-08-01%20220941.png)
 
 ### Phase 4: Decoding & Flag Extraction
 The final step is to decode the obscured string to reveal the solution.
@@ -59,7 +59,7 @@ The final step is to decode the obscured string to reveal the solution.
 The decoded flag is:
 
 ```text
-THM{S3creT_Pr0fil3_H4s_b33n_Ident1fi3d}
+THM{S3crHT_Pr0fil3_H4s_b33n_Ident1fi3d}
 ```
 
 ## 💡 Key Learnings
