@@ -5,7 +5,6 @@ The **Complimentary** room simulates a critical cloud security misconfiguration 
 
 **Vulnerability Type:** Insecure Direct Object Reference (IDOR) / IAM Misconfiguration
 **Impact:** Full data exfiltration of all user records (Contacts, Locations, Passwords)
-**Flag:** `THM{fr33_app_fr33_d4t4!}`
 
 ---
 
@@ -67,7 +66,7 @@ Press **Enter** to execute the code. The console will print a JSON array contain
 *   Locate the specific entry containing the flag format `THM{...}`.
 
 ![](Media/image5.png)
-> *Figure 3: Successful exfiltration of the database revealing the flag `THM{fr33_app_fr33_d4t4!}`.*
+> *Figure 3: Successful exfiltration of the database revealing the flag `THM{................}`.*
 
 ---
 
