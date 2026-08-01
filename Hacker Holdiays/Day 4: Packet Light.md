@@ -186,16 +186,10 @@ Perform this operation for every cookie.
 After decoding every cookie and concatenating the recovered characters in order, the hidden message becomes:
 
 ```
-THM{V3r4_1s_w4tch1ng_0veR_y0u}
+THM{......................}
 ```
 
 ---
-
-# Flag
-
-```
-THM{V3r4_1s_w4tch1ng_0veR_y0u}
-```
 
 ---
 
@@ -256,5 +250,5 @@ The covert communication channel was implemented using a custom HTTP cookie name
 Recovered Flag:
 
 ```
-THM{V3r4_1s_w4tch1ng_0veR_y0u}
+THM{...................}
 ```
