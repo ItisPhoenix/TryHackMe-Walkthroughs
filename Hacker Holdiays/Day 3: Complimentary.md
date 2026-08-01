@@ -20,7 +20,7 @@ The application claims to be "frictionless," requiring no login. This is achieve
     *   `SessionToken`
     *   `Expiration`
 
-![[image1.png]]
+![](Media/image1.png)
 > *Figure 1: Extraction of temporary AWS security credentials from the network response.*
 
 These keys are the root of the vulnerability. They are valid AWS credentials that the browser uses to talk directly to DynamoDB.
@@ -56,8 +56,8 @@ dynamodb.scan(params, function(err, data) {
 });
 ```
 
-![[image4.png]]
-> *Figure 3: Injecting the DynamoDB Scan command to retrieve all records.*
+![](Media/image4.png)
+> *Figure 2: Injecting the DynamoDB Scan command to retrieve all records.*
 
 ### Step 3: Analyze the Output
 Press **Enter** to execute the code. The console will print a JSON array containing every item in the database.
@@ -66,8 +66,8 @@ Press **Enter** to execute the code. The console will print a JSON array contain
 *   Scroll through the entries. You will see multiple `guest_id` entries (e.g., `guest-Lambda`, `guest-xss-042`).
 *   Locate the specific entry containing the flag format `THM{...}`.
 
-![[image5.png]]
-> *Figure 4: Successful exfiltration of the database revealing the flag `THM{fr33_app_fr33_d4t4!}`.*
+![](Media/image5.png)
+> *Figure 3: Successful exfiltration of the database revealing the flag `THM{fr33_app_fr33_d4t4!}`.*
 
 ---
 
