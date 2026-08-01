@@ -59,7 +59,7 @@ The final step is to decode the obscured string to reveal the solution.
 The decoded flag is:
 
 ```text
-THM{S3crHT_Pr0fil3_H4s_b33n_Ident1fi3d}
+THM{......................}
 ```
 
 ## 💡 Key Learnings
