@@ -61,7 +61,7 @@ The search will highlight the flag inside the **`README.md`** file.
 - **Context:** The flag was likely in a file that the developer deleted before pushing the final version of the website, but because it was committed to Git history previously, it remains recoverable in the object database.
 
 **Final Flag:**
-`THM{byt3_l0tus_n3v3r_f0rg3ts}`
+`THM{...................}`
 
 ## Summary of Lessons
 1.  **Never expose `.git`**: Web servers (Apache/Nginx) must be configured to deny access to hidden directories like `.git`.
