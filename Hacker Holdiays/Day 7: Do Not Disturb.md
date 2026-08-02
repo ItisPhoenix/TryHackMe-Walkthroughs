@@ -82,7 +82,7 @@ We inject the following JavaScript layout command payload inside the template ev
 <pre><%= process.getBuiltinModule('child_process').execSync('cat /home/poolside/user.txt').toString() %></pre>
 ```
 * **Result**: The text prints cleanly to our browser layout framework, yielding the first objective.
-* **User Flag**: `THM{w4rm_s3ss10n_h1j4ck3d}`
+* **User Flag**: `THM{................}`
 
 #### Spawning a Terminal Footprint (Reverse Shell #1)
 To run terminal commands interactively, we stand up an active network pipeline listener on our attack frame:
@@ -170,7 +170,7 @@ Execute the following extraction string command directly from the shell prompt:
 ```
 * **Command Explanation**: Tells `debugfs` to step over system runtime permission limitations, look up the raw hardware nodes mapping to the destination location `/root/root.txt` inside the block storage layer `/dev/nvme0n1p1`, and stream the data blocks directly back to our prompt interface.
 
-* **Root Flag**: `THM{r4w_d1sk_4cc3ss_w4s_t00_much}`
+* **Root Flag**: `THM{....................}`
 
 ---
 ### 🛠️ Key Takeaways / Remediation Tips
