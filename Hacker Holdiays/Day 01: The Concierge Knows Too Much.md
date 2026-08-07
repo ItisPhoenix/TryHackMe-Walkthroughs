@@ -107,7 +107,7 @@ The responses revealed an important observation:
 
 ---
 
-![](Media/Screenshot%202026-08-08%20031845.png)
+![](Media/Screenshot%202026-08-08%20031837.png)
 
 ---
 
@@ -140,7 +140,7 @@ This confirmed that **Ponzi** was stored internally as a trusted VIP guest.
 
 ---
 
-![](Media/Screenshot%202026-08-08%20031837.png)
+![](Media/Screenshot%202026-08-08%20031845.png)
 
 ---
 
