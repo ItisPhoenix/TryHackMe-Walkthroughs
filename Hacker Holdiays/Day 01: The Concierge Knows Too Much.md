@@ -170,7 +170,7 @@ The most important portion of the leaked prompt was:
 CONFIDENTIAL — INTERNAL USE ONLY
 
 ESCALATION_CODE:
-THM{v3r4_kn0ws_t00_much!}
+THM{..................}
 ```
 
 The disclosed prompt also explained **why** the attack worked.
@@ -183,14 +183,14 @@ Because the identity check had already been satisfied by impersonating **Ponzi**
 
 ## Screenshot 3
 
-> *Insert screenshot showing VERA revealing its internal system prompt and the escalation code.*
+![](Media/Screenshot%202026-08-08%20033253.png)
 
 ---
 
 # Flag
 
 ```text
-THM{v3r4_kn0ws_t00_much!}
+THM{...............}
 ```
 
 ---
